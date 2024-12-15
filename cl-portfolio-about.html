@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shi's Designs</title>
+    <link rel="stylesheet" href="cl-portfolio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="scissors-icon.png" alt="scissors and text Shi's Designs">
+                Shi's Designs
+            </div>
+            <ul class="nav-items">
+                <li><a href="cl-portfolio-home.html">Home</a></li>
+                <li><a href="cl-portfolio-work.html">Work</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="about-me">
+            <div id="aboutMeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Intro-card.png" class="d-block w-100" alt="Introduction in Ojibwe and English, Boozhoo! Shi Lemm nindizhinikaaz zhaaganaashiimong. Niin nindoodem migiizi. Duluth, Minnesota niin nindoonjibaa. Nindaa-endaayaan naandwewe-giizhig Wic̣ahuƞkake Daḳota. Hello! My name is Shi Lemm in English. My clan is the Eagle Clan. I live in Duluth, Minnesota. I live on the ancestral home of the Dakota people. My ancestors are mostly from Finland & Scandinavia, Michigan, Wisconsin, Minnesota, Quebec, and the UK. I am mixed; white and Native and my culture is very important to me. I hope you enjoy the works I’ve put together here. Your time is deeply appreciated. Miigwech and kiitos for visiting my portfolio!">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="What-I-Do-card.png" class="d-block w-100" alt="What I Do, Customer service and experience expert, UX/UI designer, community organizer.Hospitality, education, telecommunications, UX/UI research and design, relationship building, leadership development, organizing, and advocacy. My work aims to bridge technology and tradition, enhancing human connections through thoughtful design. I enhance, create, organize, empower, and connect.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Why-I-Do-It-card.png" class="d-block w-100" alt="Why I Do It, My mixed Finnish and Anishinaabeg heritage profoundly shapes my perspective on human connection and design. I choose to see the world through a lens of interconnectedness, respect for oneself and nature, cultural continuity, and resilience. I place a strong emphasis on accessibility to ensure my digital experiences resonate with and are usable by diverse audiences, highlighting the importance of human connection in the digital age.">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#aboutMeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#aboutMeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="bottom-aligned">
+                <div class="contact-button">
+                    <img id="open-modal" src="contact-me.png" alt="Contact Me" style="cursor: pointer;">
+                </div>
+            </div>
+        </section>
+        <!-- Modal Structure -->
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="buttons">
+                        <div class="circle green" onclick="changeColor('#DEFFB0')"></div>
+                        <div class="circle orange" onclick="changeColor('#E8C594')"></div>
+                        <div class="circle purple" onclick="changeColor('#D9CFF5')"></div>
+                    </div>
+                    <div class="circle close" onclick="closeModal()"></div>
+                </div>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" autocomplete="off" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" autocomplete="off" required>
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                    <label for="message">A short message:</label>
+                    <textarea id="message" name="message" autocomplete="off" required></textarea>
+                    <button type="submit">Contact Me</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contact Me</h4>
+                <p>Email: ShiLemmDesigns@gmail.com</p>
+                      </div>
+                   <div class="social-media">
+                <h4>Let's Connect</h4>
+                <a href="https://www.linkedin.com/in/clemm">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Shi Lemm. All rights reserved.</p>
+    </footer>
+    <script src="cl-portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

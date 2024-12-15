@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shi's Designs</title>
+    <link rel="stylesheet" href="cl-portfolio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <div class="logo">
+                <img src="scissors-icon.png" alt="scissors and text Shi's Designs">
+                Shi's Designs
+            </div>
+            <ul class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="cl-portfolio-work.html">Work</a></li>
+                <li><a href="cl-portfolio-about.html">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="welcome-section">
+            <div class="welcome-message">
+                <img src="welcome-banner.png" alt="Biindigen (welcome), Please enjoy and let me know what you think!">
+            </div>
+        </section>
+        <section class="mission-section">
+            <div class="mission-statement">
+                <img src="mission-statement.png"
+                    alt="My work aims to bridge technology and tradition, enhancing human connections through thoughtful design.">
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="bottom-aligned">
+                <div class="contact-button">
+                    <img id="open-modal" src="contact-me.png" alt="Contact Me" style="cursor: pointer;">
+                </div>
+            </div>
+        </section>
+        <!-- Modal Structure -->
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="buttons">
+                        <div class="circle green" onclick="changeColor('#DEFFB0')"></div>
+                        <div class="circle orange" onclick="changeColor('#E8C594')"></div>
+                        <div class="circle purple" onclick="changeColor('#D9CFF5')"></div>
+                    </div>
+                    <div class="circle close" onclick="closeModal()"></div>
+                </div>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" autocomplete="off" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" autocomplete="off" required>
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                    <label for="message">A short message:</label>
+                    <textarea id="message" name="message" autocomplete="off" required></textarea>
+                    <button type="submit">Contact Me</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contact Me</h4>
+                <p>Email: ShiLemmDesigns@gmail.com</p>
+                      </div>
+                   <div class="social-media">
+                <h4>Let's Connect</h4>
+                <a href="https://www.linkedin.com/in/clemm">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Shi Lemm. All rights reserved.</p>
+    </footer>
+    <script src="cl-portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
